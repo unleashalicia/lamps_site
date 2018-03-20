@@ -1,34 +1,36 @@
 import React from 'react';
-import logo from '../assets/images/lamps_logo.jpg';
+import logo from '../assets/images/lamps_transparent_logo.png';
+import '../assets/css/style.css';
 
 const Header = () => {
     const headerStyle = {
-        backgroundColor: "black",
+        backgroundColor: "#000000",
         color: "white", 
         position: "relative",
-        height: "20vh"
+        height: "20vh",
+        width: "100vw"
     };
 
     const imgStyle = {
-        width: "100px",
+        width: "20vw",
         position: "absolute",
         top: "50%",
-        left: "5%",
+        left: "1%",
         transform: "translateY(-50%)"
-    }
+    };
 
     const h1Style = {
         position: "absolute",
         left: "50%",
         top: "50%",
         transform: "translate(-50%, -50%)"
-    }
+    };
 
     return (
         <div style={headerStyle}>
-        <img style={imgStyle} src={logo} alt="LAMPS logo"/>
-        <h1 style={h1Style}>LAMPS: Los Angeles Medicinal Plant Society</h1>
-    </div>
+            <img style={imgStyle} src={logo} alt="LAMPS logo"/>
+            <h1 style={h1Style}>LAMPS: Los Angeles Medicinal Plant Society</h1>
+        </div>
     );
 };
             
