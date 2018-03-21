@@ -21,8 +21,7 @@ class Home extends Component {
         this.homeStyle = {
             width: "100vw",
             backgroundColor: "#385149",
-            position: "relative",
-            top: "20vh"
+            position: "relative"
         };
 
     }
@@ -31,15 +30,15 @@ class Home extends Component {
         return (
             <div style={this.homeStyle}>
                 <Hero image={liftSky} alt={"man lifting sky to look at cosmos"}/>
-                <Section h1={"Welcome to LAMPS!"}/>
+                <Section h1={"Section"}/>
                 <BackgroundImage image={ayahuasca} alt={"ayahuasca in a pot"}/>
-                <Section h1={"I'm a Section!"}/>
+                <Section h1={"Section"}/>
                 <BackgroundImage image={passionFlower} alt={"passion flower"}/>
-                <Section h1={"Me too!"}/>
+                <Section h1={"Section"}/>
                 <BackgroundImage image={mushrooms} alt={"mushrooms"}/>
-                <Section h1={"Me too!"}/>
+                <Section h1={"Section"}/>
                 <BackgroundImage image={lotus} alt={"pink lotus"}/>
-                <Section h1={"Me too!"}/>
+                <Section h1={"Section"}/>
                 <BackgroundImage image={leaf} alt={"leaf"}/>
             </div>
         )

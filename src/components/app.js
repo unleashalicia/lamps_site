@@ -3,6 +3,7 @@ import Header from './header';
 import Home from './home';
 import Footer from './footer';
 import '../assets/css/style.css';
+import '../assets/css/app.css';
 
 const App = () => (
     <div>

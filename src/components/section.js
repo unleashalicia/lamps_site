@@ -8,14 +8,17 @@ class Section extends Component {
             width: "100vw",
             height: "80vh",
             color: "black",
-            backgroundColor: "#36454f",
+            backgroundColor: "#191919",
             position: "relative"
         };
 
         this.h1style = {
             position: "absolute",
             left: "50%",
-            transform: "translateX(-50%)"
+            transform: "translateX(-50%)",
+            color: "white",
+            textShadow: "5px 5px 5px black",
+            marginTop: "1%"
         };
 
         this.divStyle = {
