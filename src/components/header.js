@@ -8,7 +8,8 @@ const Header = () => {
         color: "white", 
         position: "fixed",
         height: "20vh",
-        width: "100vw"
+        width: "100vw",
+        zIndex: 5
     };
 
     const imgStyle = {
@@ -19,17 +20,9 @@ const Header = () => {
         transform: "translateY(-50%)"
     };
 
-    const h1Style = {
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        transform: "translate(-50%, -50%)"
-    };
-
     return (
         <div style={headerStyle}>
             <img style={imgStyle} src={logo} alt="LAMPS logo"/>
-            <h1 style={h1Style}>LAMPS: Los Angeles Medicinal Plant Society</h1>
         </div>
     );
 };
