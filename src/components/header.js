@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from '../assets/images/lamps_transparent_logo.png';
-import '../assets/css/style.css';
+
 
 const Header = () => {
     const headerStyle = {
         backgroundColor: "#000000",
         color: "white", 
-        position: "relative",
+        position: "fixed",
         height: "20vh",
         width: "100vw"
     };

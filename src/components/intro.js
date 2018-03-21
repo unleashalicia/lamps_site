@@ -2,10 +2,10 @@ import React from 'react';
 
 const Intro = props => {
     const introStyle = {
-        width: "80vw",
-        height: "30vh",
-        backgroundColor: "#62B28B"
-    }
+        width: "100vw",
+        height: "300px",
+        backgroundColor: "#385149"
+    };
 
     return (
       <div style={introStyle}>
