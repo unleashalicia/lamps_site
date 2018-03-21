@@ -6,9 +6,9 @@ class Section extends Component {
 
         this.introStyle = {
             width: "100vw",
-            height: "300px",
+            height: "80vh",
             color: "black",
-            backgroundColor: "#C1C1BA",
+            backgroundColor: "#36454f",
             position: "relative"
         };
 
@@ -17,12 +17,26 @@ class Section extends Component {
             left: "50%",
             transform: "translateX(-50%)"
         };
+
+        this.divStyle = {
+            backgroundColor: "white",
+            width: "90%",
+            height: "80%",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            border: "1px solid black"
+        }
     }
 
     render(){
         return (
             <div style={this.introStyle}>
                 <h1 style={this.h1style}>{this.props.h1}</h1>
+                <div style={this.divStyle}>
+
+                </div>
             </div>
         );
     }

@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from './header';
-import Main from './main';
+import Home from './home';
+import Footer from './footer';
 import '../assets/css/style.css';
 
 const App = () => (
     <div>
         <div className="app">
             <Header/>
-            <Main/>
+            <Home/>
+            <Footer/>
         </div>
     </div>
 );

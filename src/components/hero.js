@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
 
-class BackgroundImage extends Component {
+class Hero extends Component {
     constructor(props){
         super(props);
 
         this.imageStyle = {
             width: "100vw",
-            height: "50vh",
+            height: "100vh",
             backgroundImage: `url(${this.props.image})`,
             position: "relative",
             backgroundAttachment: "fixed",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            border: "2px solid black"
+            backgroundSize: "cover"
         };
 
     }
@@ -25,4 +24,4 @@ class BackgroundImage extends Component {
     }
 }
 
-export default BackgroundImage;
+export default Hero;
