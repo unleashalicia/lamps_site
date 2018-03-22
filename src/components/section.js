@@ -4,7 +4,7 @@ class Section extends Component {
     constructor(props){
         super(props);
 
-        this.introStyle = {
+        this.sectionStyle = {
             width: "100vw",
             height: "80vh",
             color: "black",
@@ -16,7 +16,7 @@ class Section extends Component {
             position: "absolute",
             left: "50%",
             transform: "translateX(-50%)",
-            color: "white",
+            color: "#62B28B",
             textShadow: "5px 5px 5px black",
             marginTop: "1%"
         };
@@ -35,7 +35,7 @@ class Section extends Component {
 
     render(){
         return (
-            <div style={this.introStyle}>
+            <div style={this.sectionStyle}>
                 <h1 style={this.h1style}>{this.props.h1}</h1>
                 <div style={this.divStyle}>
 
