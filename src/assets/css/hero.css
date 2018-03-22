@@ -1,0 +1,11 @@
+.hero-text {
+    width: 90%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: whitesmoke;
+    text-align: center;
+}

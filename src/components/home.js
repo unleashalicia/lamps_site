@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+
 import Section from './section';
 import BackgroundImage from './background_image';
 import Hero from './hero';
-import '../assets/css/style.css';
+
+import '../assets/css/home.css';
+
 import passionFlower from '../assets/images/passionflower.jpg';
-import forestMan from '../assets/images/forestface.jpeg';
 import leaf from '../assets/images/leaf.jpg';
 import liftSky from'../assets/images/flammarion.jpg';
 import mushrooms from '../assets/images/mushrooms.jpg';
@@ -17,18 +19,11 @@ import lotus from '../assets/images/pinklotus.jpg';
 class Home extends Component {
     constructor(props) {
         super(props);
-
-        this.homeStyle = {
-            width: "100vw",
-            backgroundColor: "#385149",
-            position: "relative"
-        };
-
     }
 
     render(){
         return (
-            <div style={this.homeStyle}>
+            <div className="home">
                 <Hero image={liftSky} alt={"man lifting sky to look at cosmos"}/>
                 <Section h1={"Section"}/>
                 <BackgroundImage image={ayahuasca} alt={"ayahuasca in a pot"}/>
