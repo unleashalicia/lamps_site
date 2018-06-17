@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import Nav from './nav';
 import logo from '../assets/images/lamps_transparent_logo.png';
+
 
 
 class Header extends Component {
@@ -15,6 +18,7 @@ class Header extends Component {
             zIndex: 5,
             transition: "1s"
         };
+
 
         this.smallHeaderStyle = {
             backgroundColor: "#000000",
@@ -38,6 +42,8 @@ class Header extends Component {
         return (
             <div style={this.headerStyle}>
                 <img style={this.imgStyle} src={logo} alt="LAMPS logo"/>
+                <Nav />
+                
             </div>
         );
     }
