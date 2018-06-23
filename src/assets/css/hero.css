@@ -1,0 +1,22 @@
+.hero-text {
+    width: 90%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5%;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+}

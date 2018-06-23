@@ -1,30 +1,52 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import Nav from './nav';
 import logo from '../assets/images/lamps_transparent_logo.png';
 
 
-const Header = () => {
-    const headerStyle = {
-        backgroundColor: "#000000",
-        color: "white", 
-        position: "fixed",
-        height: "20vh",
-        width: "100vw",
-        zIndex: 5
-    };
 
-    const imgStyle = {
-        width: "20vw",
-        position: "absolute",
-        top: "50%",
-        left: "1%",
-        transform: "translateY(-50%)"
-    };
+class Header extends Component {
+    constructor(props){
+        super(props);
 
-    return (
-        <div style={headerStyle}>
-            <img style={imgStyle} src={logo} alt="LAMPS logo"/>
-        </div>
-    );
+        this.headerStyle = {
+            backgroundColor: "#000000",
+            color: "white",
+            position: "fixed",
+            height: "20vh",
+            width: "100vw",
+            zIndex: 5,
+            transition: "1s"
+        };
+
+
+        this.smallHeaderStyle = {
+            backgroundColor: "#000000",
+            color: "white",
+            position: "fixed",
+            height: "10vh",
+            width: "100vw",
+            zIndex: 5
+        };
+
+        this.imgStyle = {
+            height: "90%",
+            position: "absolute",
+            top: "50%",
+            left: "1%",
+            transform: "translateY(-50%)"
+        };
+    }
+
+    render(){
+        return (
+            <div style={this.headerStyle}>
+                <img style={this.imgStyle} src={logo} alt="LAMPS logo"/>
+                <Nav />
+                
+            </div>
+        );
+    }
 };
             
 export default Header;
