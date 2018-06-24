@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import content from '../helpers/content'
 import '../assets/css/hero.css';
 
 class Hero extends Component {
@@ -19,11 +20,12 @@ class Hero extends Component {
     }
 
     render(){
+        const { header, subheader } = content.home.hero
         return (
             <div style={this.imageStyle}>
                 <div className="hero-text">
-                    <h1>Welcome to LAMPS: </h1>
-                    <h2>The Los Angeles Medicinal Plant Society</h2>
+                    <h1>{header}</h1>
+                    <h2>{subheader}</h2>
                 </div>
             </div>
         );

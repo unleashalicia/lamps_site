@@ -13,8 +13,7 @@ import mushrooms from '../assets/images/mushrooms.jpg';
 import ayahuasca from '../assets/images/aya.JPG';
 import lotus from '../assets/images/pinklotus.jpg';
 
-
-
+import content from '../helpers/content'
 
 class Home extends Component {
     constructor(props) {
@@ -22,19 +21,26 @@ class Home extends Component {
     }
 
     render(){
+        const { about } = content.home
         return (
             <div className="home">
                 <Hero image={liftSky} alt={"man lifting sky to look at cosmos"}/>
-                <Section h1={"Section"}/>
+                <Section 
+                    heading="About" 
+                    content={about.description} 
+                    image={passionFlower} 
+                    alt="passion flower"
+                    imgSide="left"
+                />
                 <BackgroundImage image={ayahuasca} alt={"ayahuasca in a pot"}/>
-                <Section h1={"Section"}/>
+                {/* <Section heading={"Section"}/>
                 <BackgroundImage image={passionFlower} alt={"passion flower"}/>
-                <Section h1={"Section"}/>
+                <Section heading={"Section"}/>
                 <BackgroundImage image={mushrooms} alt={"mushrooms"}/>
-                <Section h1={"Section"}/>
+                <Section heading={"Section"}/>
                 <BackgroundImage image={lotus} alt={"pink lotus"}/>
-                <Section h1={"Section"}/>
-                <BackgroundImage image={leaf} alt={"leaf"}/>
+                <Section heading={"Section"}/>
+                <BackgroundImage image={leaf} alt={"leaf"}/> */}
             </div>
         )
     }

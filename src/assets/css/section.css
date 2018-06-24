@@ -1,6 +1,6 @@
 .section-container{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     color: black;
     background-color: #191919;
     position: relative;
@@ -13,16 +13,40 @@
     transform: translateX(-50%);
     color: #62B28B;
     text-shadow: 5px 5px 5px #191919;
+    font-size: 80px;
 }
 
 .section-body {
     background-color: whitesmoke;
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 85%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     border: 1px solid black;
 }
 
+.section-body p {
+    font-size: 60px;
+}
+
+.section-body .imageDiv, .section-body .contentDiv {
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-body .imageDiv {
+    width: 33%;
+    left: 1%;
+    border: 1px solid black;
+}
+
+.section-body .contentDiv {
+    width: 65%;
+    background-color: whitesmoke;
+    right: 1%;
+    padding: 3%;
+}
