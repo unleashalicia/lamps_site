@@ -13,7 +13,6 @@
     transform: translateX(-50%);
     color: #62B28B;
     text-shadow: 5px 5px 5px #191919;
-    font-size: 80px;
 }
 
 .section-body {
@@ -28,7 +27,8 @@
 }
 
 .section-body p {
-    font-size: 60px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .section-body .imageDiv, .section-body .contentDiv {

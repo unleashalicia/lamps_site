@@ -25,7 +25,6 @@ class Hero extends Component {
             <div style={this.imageStyle}>
                 <div className="hero-text">
                     <h1>{header}</h1>
-                    <h2>{subheader}</h2>
                 </div>
             </div>
         );

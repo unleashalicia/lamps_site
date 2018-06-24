@@ -1,8 +1,10 @@
 export default {
+    header: {
+        title: "Los Angeles Medicinal Plant Society"
+    },
     home: {
         hero: {
-            header: "Welcome to LAMPS:",
-            subheader: "The Los Angeles Medicinal Plant Society"
+            header: "Welcome to LAMPS!"
         },
         about: {
             description: "The goal of LAMPS is to create a space to discuss, create and support projects that will lead to eventual legalization and safe integration of entheogens into mainstream health care.  The goal of LAMPS is to create a space to discuss, create and support projects that will lead to eventual legalization and safe integration of entheogens into mainstream health care.  The goal of LAMPS is to create a space to discuss, create and support projects that will lead to eventual legalization and safe integration of entheogens into mainstream health care.   The goal of LAMPS is to create a space to discuss, create and support projects that will lead to eventual legalization and safe integration of entheogens into mainstream health care.  The goal of LAMPS is to create a space to discuss, create and support projects that will lead to eventual legalization and safe integration of entheogens into mainstream health care."

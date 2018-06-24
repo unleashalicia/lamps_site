@@ -9,7 +9,7 @@
 }
 
 .logo {
-    height: 90%;
+    height: 95%;
     position: absolute;
     top: 50%;
     left: 1%;
@@ -24,6 +24,17 @@
     width: 49%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.headingContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headingContainer h1{
+    font-weight: lighter;
 }
 
 @media all and (max-width: 500px) {
