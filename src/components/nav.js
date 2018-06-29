@@ -9,7 +9,6 @@ const Nav = props => {
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/Contact">Contact</Link></li>
-                <li><a href="https://www.lapss.org/" target="_blank">LAPSS</a></li>
             </ul>
         </div>
     )

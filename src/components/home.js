@@ -22,25 +22,43 @@ class Home extends Component {
 
     render(){
         const { about } = content.home
+        const { contact } = content
+        const contactInfo = contact.organizers.map((item, index) => {
+            return (
+                <div key={index}>
+                    <div>{`Name: ${item.name}`}</div>
+                    <div>{`Title: ${item.title}`}</div>
+                    <div>{`Email: ${item.email}`}</div>
+                </div>
+            )
+        })
         return (
             <div className="home">
                 <Hero image={liftSky} alt={"man lifting sky to look at cosmos"}/>
-                <Section 
-                    heading="About" 
-                    content={about.description} 
-                    image={passionFlower} 
-                    alt="passion flower"
-                    imgSide="left"
-                />
-                <BackgroundImage image={ayahuasca} alt={"ayahuasca in a pot"}/>
-                {/* <Section heading={"Section"}/>
-                <BackgroundImage image={passionFlower} alt={"passion flower"}/>
-                <Section heading={"Section"}/>
-                <BackgroundImage image={mushrooms} alt={"mushrooms"}/>
-                <Section heading={"Section"}/>
-                <BackgroundImage image={lotus} alt={"pink lotus"}/>
-                <Section heading={"Section"}/>
-                <BackgroundImage image={leaf} alt={"leaf"}/> */}
+                <div className="sectionContainer row">
+                    <Section 
+                        heading={about.who.heading}
+                        content={about.who.description} 
+                        image={passionFlower} 
+                        alt="passion flower"
+                    />
+                    <Section 
+                        heading={about.what.heading}
+                        content={about.what.description} 
+                        image={lotus} 
+                        alt="pink lotus"
+                    />
+                </div>
+                <BackgroundImage image={leaf} alt="leaf" />
+                <div className="row videoContainer">
+                    <div className="video"></div>
+                </div>
+                {/* <BackgroundImage image={ayahuasca} alt="ayahuasca in a pot"/> */}
+                <div className="row contactContainer">>
+                    <div className="contactContent">
+                        {contactInfo}
+                    </div>
+                </div>
             </div>
         )
     }
