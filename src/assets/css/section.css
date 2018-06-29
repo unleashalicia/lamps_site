@@ -1,6 +1,6 @@
 .section-container{
-    width: 100%;
-    height: 60vh;
+    width: 85%;
+    height: 100%;
     color: black;
     background-color: #191919;
     position: relative;
@@ -17,8 +17,8 @@
 
 .section-body {
     background-color: whitesmoke;
-    width: 95%;
-    height: 85%;
+    width: 90%;
+    height: 40vw;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -29,6 +29,7 @@
 .section-body p {
     font-size: 18px;
     line-height: 1.5;
+    margin: 3%;
 }
 
 .section-body .imageDiv, .section-body .contentDiv {
@@ -40,13 +41,19 @@
 
 .section-body .imageDiv {
     width: 33%;
-    left: 1%;
     border: 1px solid black;
 }
 
 .section-body .contentDiv {
     width: 65%;
     background-color: whitesmoke;
+    padding: 5%;
+}
+
+.left {
+    left: 1%;
+}
+
+.right {
     right: 1%;
-    padding: 3%;
 }
