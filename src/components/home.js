@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Section from './section';
 import BackgroundImage from './background_image';
 import Hero from './hero';
+import VideoSection from './videoSection'
 
 import '../assets/css/home.css';
 
@@ -50,9 +51,7 @@ class Home extends Component {
                     />
                 </div>
                 <BackgroundImage image={leaf} alt="leaf" />
-                <div className="row videoContainer">
-                    <div className="video"></div>
-                </div>
+                    <VideoSection />
                 {/* <BackgroundImage image={ayahuasca} alt="ayahuasca in a pot"/> */}
                 <div className="row contactContainer">>
                     <div className="contactContent">
