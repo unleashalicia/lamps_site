@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Section from './section';
 import BackgroundImage from './background_image';
 import Hero from './hero';
+import VideoSection from './videoSection'
 
 import '../assets/css/home.css';
 
@@ -34,8 +35,8 @@ class Home extends Component {
         })
         return (
             <div className="home">
-                <Hero image={liftSky} alt={"man lifting sky to look at cosmos"}/>
-                <div className="sectionContainer row">
+                <Hero image={liftSky} alt="man lifting sky to look at cosmos"/>
+                <div className="sectionContainer row" id="about" >
                     <Section 
                         heading={about.who.heading}
                         content={about.who.description} 
@@ -50,12 +51,9 @@ class Home extends Component {
                     />
                 </div>
                 <BackgroundImage image={leaf} alt="leaf" />
-                <div className="row videoContainer">
-                    <div className="video"></div>
-                </div>
-                {/* <BackgroundImage image={ayahuasca} alt="ayahuasca in a pot"/> */}
+                    <VideoSection />
                 <div className="row contactContainer">>
-                    <div className="contactContent">
+                    <div className="contactContent" id="contact">
                         {contactInfo}
                     </div>
                 </div>
