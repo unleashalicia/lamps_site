@@ -1,32 +1,30 @@
-import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
-import Nav from './nav';
+import React from 'react';
 import logo from '../assets/images/lamps_transparent_logo.png';
-import content from '../helpers/content'
-
-import '../assets/css/header.css'
 
 
+const Header = () => {
+    const headerStyle = {
+        backgroundColor: "#000000",
+        color: "white", 
+        position: "fixed",
+        height: "20vh",
+        width: "100vw",
+        zIndex: 5
+    };
 
-class Header extends Component {
-    constructor(props){
-        super(props);
+    const imgStyle = {
+        width: "20vw",
+        position: "absolute",
+        top: "50%",
+        left: "1%",
+        transform: "translateY(-50%)"
+    };
 
-    }
-
-    render(){
-        return (
-            <div className="header">
-                <img className="logo" src={logo} alt="LAMPS logo"/>
-                <div className="headingContainer">
-                    <h1>{content.header.title}</h1>
-                </div>
-                <div className="navContainer">
-                    <Nav />
-                </div>
-            </div>
-        );
-    }
+    return (
+        <div style={headerStyle}>
+            <img style={imgStyle} src={logo} alt="LAMPS logo"/>
+        </div>
+    );
 };
             
 export default Header;
