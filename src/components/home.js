@@ -35,8 +35,8 @@ class Home extends Component {
         })
         return (
             <div className="home">
-                <Hero image={liftSky} alt={"man lifting sky to look at cosmos"}/>
-                <div className="sectionContainer row">
+                <Hero image={liftSky} alt="man lifting sky to look at cosmos"/>
+                <div className="sectionContainer row" id="about" >
                     <Section 
                         heading={about.who.heading}
                         content={about.who.description} 
@@ -52,9 +52,8 @@ class Home extends Component {
                 </div>
                 <BackgroundImage image={leaf} alt="leaf" />
                     <VideoSection />
-                {/* <BackgroundImage image={ayahuasca} alt="ayahuasca in a pot"/> */}
                 <div className="row contactContainer">>
-                    <div className="contactContent">
+                    <div className="contactContent" id="contact">
                         {contactInfo}
                     </div>
                 </div>
