@@ -1,0 +1,44 @@
+.header {
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    height: 20vh;
+    width: 100vw;
+    z-index: 5;
+    transition: 1s;
+}
+
+.logo {
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+.navContainer {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    width: 49%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headingContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headingContainer h1{
+    font-weight: lighter;
+}
+
+@media all and (max-width: 500px) {
+    .header {
+      height: 10vh;
+    }
+  }
