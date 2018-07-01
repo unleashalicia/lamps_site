@@ -4,7 +4,7 @@ export default {
     },
     home: {
         hero: {
-            header: "Welcome to LAMPS!"
+            header: ""
         },
         about: {
             who: {
