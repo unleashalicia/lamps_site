@@ -35,19 +35,19 @@ class Home extends Component {
         })
         return (
             <div className="home">
-                <Hero image={liftSky} alt="man lifting sky to look at cosmos"/>
+                <Hero />
                 <div className="sectionContainer row" id="about" >
                     <Section 
                         heading={about.who.heading}
                         content={about.who.description} 
-                        image={passionFlower} 
-                        alt="passion flower"
+                        image={liftSky} 
+                        alt="lifting the sky"
                     />
                     <Section 
                         heading={about.what.heading}
                         content={about.what.description} 
-                        image={lotus} 
-                        alt="pink lotus"
+                        image={ayahuasca} 
+                        alt="ayahuasca in pot"
                     />
                 </div>
                 <BackgroundImage image={leaf} alt="leaf" />

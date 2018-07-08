@@ -11,7 +11,7 @@ import '../assets/css/app.css';
 const App = () => (
     <div>
         <div className="app">
-            <Header/>
+            {/* <Header/> */}
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/contact" component={Contact} />

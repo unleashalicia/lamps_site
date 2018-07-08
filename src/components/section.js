@@ -10,7 +10,8 @@ class Section extends Component {
             backgroundImage: `url(${this.props.image})`,
             height: "300px",
             backgroundSize: 'cover',
-            backgroundRepeat: "no repeat"
+            backgroundRepeat: "no repeat",
+            backgroundPosition: "center"
         }
     }
 
