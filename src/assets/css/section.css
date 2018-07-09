@@ -41,13 +41,13 @@
 
 .section-body .imageDiv {
     width: 33%;
-    border: 1px solid black;
 }
 
 .section-body .contentDiv {
     width: 65%;
     background-color: whitesmoke;
     padding: 5%;
+    border: 3px solid black;
 }
 
 .left {
