@@ -22,7 +22,6 @@ export default {
         organizers: [
             {
                 name: "Brad Adams, PhD",
-                title: "Fake Title",
                 email: "Fake Email"
             }
         ]

@@ -13,6 +13,7 @@ import liftSky from'../assets/images/flammarion.jpg';
 import mushrooms from '../assets/images/mushrooms.jpg';
 import ayahuasca from '../assets/images/aya.JPG';
 import lotus from '../assets/images/pinklotus.jpg';
+import brad from '../assets/images/brad.jpg';
 
 import content from '../helpers/content'
 
@@ -24,12 +25,17 @@ class Home extends Component {
     render(){
         const { about } = content.home
         const { contact } = content
+        const contactPhoto = {
+            backgroundImage: `url(${brad})`,
+            height: '150px',
+            width: '150px',
+            border: '1px solid black'
+        }
         const contactInfo = contact.organizers.map((item, index) => {
             return (
                 <div key={index}>
-                    <div>{`Name: ${item.name}`}</div>
-                    <div>{`Title: ${item.title}`}</div>
-                    <div>{`Email: ${item.email}`}</div>
+                    <div>{`${item.name}`}</div>
+                    <div>{`${item.email}`}</div>
                 </div>
             )
         })
@@ -53,9 +59,10 @@ class Home extends Component {
                 </div>
                 <BackgroundImage image={leaf} alt="leaf" />
                     <VideoSection />
-                <div className="row contactContainer">>
-                    <div className="contactContent" id="contact">
-                        {contactInfo}
+                <div className="row contactContainer">
+                    <div className="contactContent row" id="contact">
+                        <div className="col" style={contactPhoto} />
+                        <div className="col">{contactInfo}</div>
                     </div>
                 </div>
             </div>
